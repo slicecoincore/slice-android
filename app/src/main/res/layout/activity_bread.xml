@@ -184,6 +184,7 @@
         android:layout_above="@+id/bottom_toolbar_layout1"
         android:layout_below="@+id/toolbar_layout"
         android:animateLayoutChanges="true"
+        android:background="@color/black"
         android:orientation="vertical">
 
         <androidx.recyclerview.widget.RecyclerView
