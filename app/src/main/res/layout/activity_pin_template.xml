@@ -6,41 +6,38 @@
     android:id="@+id/activity_intro_set_pit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/extra_light_blue_background"
+    android:background="@color/black"
     tools:context="com.breadwallet.presenter.activities.SetPinActivity">
 
     <com.breadwallet.presenter.customviews.BRText
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/bread_margin"
-        android:layout_marginTop="@dimen/bread_margin"
-        android:text="@string/UpdatePin.createTitle"
-        android:textColor="@color/almost_black"
-        android:textSize="@dimen/header"
-        android:fontFamily="@font/share_tech_mono"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/faq_button"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/bread_margin"
         android:layout_marginRight="16dp"
-        app:layout_constraintHorizontal_bias="0.0"/>
+        android:fontFamily="@font/share_tech_mono"
+        android:text="@string/UpdatePin.createTitle"
+        android:textColor="@color/white"
+        android:textSize="@dimen/header"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/faq_button"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.breadwallet.presenter.customviews.BRText
         android:id="@+id/description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="24dp"
-        android:lineSpacingMultiplier="1.3"
+        android:lineSpacingMultiplier="1.2"
         android:text="@string/UpdatePin.createInstruction"
-        android:textColor="@color/almost_black"
+        android:textColor="@color/white"
         android:textSize="@dimen/sub_header"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@+id/title"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <com.breadwallet.presenter.customviews.BRKeyboard
         android:id="@+id/brkeyboard"

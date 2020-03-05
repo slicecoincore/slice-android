@@ -29,6 +29,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:clipChildren="false"
+            android:background="@color/black"
             android:clipToPadding="false">
 
             <androidx.appcompat.widget.Toolbar
@@ -56,12 +57,16 @@
                         android:id="@+id/primary_price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="32dp"
                         android:fontFamily="@font/share_tech_mono"
                         android:textColor="@color/white"
-                        android:textSize="30sp"
+                        android:textSize="36sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="MissingConstraints"
-                        tools:layout_editor_absoluteX="41dp"
-                        tools:layout_editor_absoluteY="31dp"
                         tools:text="1000.00000000" />
 
                     <com.breadwallet.presenter.customviews.BRText
