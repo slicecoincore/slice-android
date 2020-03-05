@@ -3,7 +3,7 @@
   <!-- App name -->
   <string name="About.appName.android">Slice</string>
   <!-- About screen blog label -->
-  <string name="About.blog">Website</string>
+  <string name="About.blog">Exchange</string>
   <!-- About screen footer -->
   <string name="About.footer">Made by the Slice Team\n%1$s</string>
   <!-- About app version -->
@@ -33,7 +33,7 @@
   <!-- Keystore error -->
   <string name="Alert.keystore.generic.android">There is a problem with your Android OS keystore, please contact slicecoin@gmail.com</string>
   <!-- KeyStore error, keys are invalidated -->
-  <string name="Alert.keystore.invalidated.android">Your Bread encrypted data was recently invalidated because your Android lock screen was disabled.</string>
+  <string name="Alert.keystore.invalidated.android">Your Slice encrypted data was recently invalidated because your Android lock screen was disabled.</string>
   <!-- Keystore error title -->
   <string name="Alert.keystore.title.android">Android KeyStore Error</string>
   <!-- No internet alert message -->
@@ -573,7 +573,7 @@
   <!-- Touch Id spending limit screen title -->
   <string name="TouchIdSpendingLimit.title">Touch ID Spending Limit</string>
   <!-- name of spending limit when using fingerprint authorization -->
-  <string name="TouchIdSpendingLimit.title.android">Fingerprint Authorization Spending Limit</string>
+  <string name="TouchIdSpendingLimit.title.android">Fingerprint Spending Limit</string>
   <!-- Availability status text -->
   <string name="Transaction.available">Available to Spend</string>
   <!-- Transaction complete label -->

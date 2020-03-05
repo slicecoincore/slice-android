@@ -120,8 +120,6 @@
         android:layout_width="0dp"
         android:layout_height="@dimen/big_button_height"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="@dimen/bread_margin"
-        android:layout_marginStart="@dimen/bread_margin"
         android:elevation="8dp"
         android:padding="10dp"
         android:text="@string/ReScan.buttonTitle"
@@ -131,7 +129,7 @@
         app:isBreadButton="true"
         app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
     <ImageButton
         android:id="@+id/faq_button"

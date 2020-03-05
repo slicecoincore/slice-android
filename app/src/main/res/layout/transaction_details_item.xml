@@ -102,15 +102,14 @@
                     android:id="@+id/description_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="sent --- "
-                    android:textColor="@color/almost_black"
-                    android:textIsSelectable="true"
-                    android:textSize="30sp"
+                    android:layout_marginEnd="16dp"
                     android:fontFamily="@font/share_tech_mono"
-                    />
+                    android:text="sent --- "
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="30sp" />
 
                 <com.breadwallet.presenter.customviews.BRText
                     android:id="@+id/sub_header"
@@ -269,7 +268,7 @@
                     android:layout_marginEnd="16dp"
                     android:layout_marginStart="16dp"
                     android:text="@string/ViewOnBlockchain"
-                    android:textColor="@color/dark_blue"
+                    android:textColor="@color/wallet_orange"
                     android:clickable="true"
                     />
 

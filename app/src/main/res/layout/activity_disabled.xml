@@ -6,7 +6,7 @@
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/litecoin_litewallet_blue"
+    android:background="@color/black"
     tools:context="com.breadwallet.presenter.activities.DisabledActivity">
 
 
@@ -23,7 +23,7 @@
         android:paddingTop="8dp"
         android:text="@string/UnlockScreen.resetPin"
         app:isBreadButton="false"
-        android:textColor="@color/button_secondary_text"
+        android:textColor="@color/wallet_orange"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>

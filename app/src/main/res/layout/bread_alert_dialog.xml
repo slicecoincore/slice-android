@@ -65,7 +65,7 @@
             android:layout_marginStart="16dp"
             android:layout_weight="1.0"
             android:background="@android:color/transparent"
-            android:textColor="@color/dark_blue"/>
+            android:textColor="@color/wallet_orange"/>
 
         <com.breadwallet.presenter.customviews.BRButton
             android:id="@+id/neg_button"
@@ -75,7 +75,7 @@
             android:layout_marginStart="16dp"
             android:layout_weight="1.0"
             android:background="@android:color/transparent"
-            android:textColor="@color/dark_blue"/>
+            android:textColor="@color/wallet_orange"/>
 
     </LinearLayout>
 
