@@ -114,7 +114,7 @@ public class PaperKeyActivity extends BRActivity {
                             brDialogView.dismissWithAnimation();
                         }
                     }, null, null, 0);
-            BRReportsManager.reportBug(new IllegalArgumentException("Paper Key error, please contact support at contact@loafwallet.org: " + wordArray.length), true);
+            BRReportsManager.reportBug(new IllegalArgumentException("Paper Key error, please contact support at slicecoin@gmail.com: " + wordArray.length), true);
         } else {
             if (wordArray.length != 12) {
                 BRReportsManager.reportBug(new IllegalArgumentException("Wrong number of paper keys: " + wordArray.length + ", lang: " + Locale.getDefault().getLanguage()), true);

@@ -43,6 +43,7 @@ public class WriteDownActivity extends BRActivity {
         //TODO: all views are using the layout of this button. Views should be refactored without it
         // Hiding until layouts are built.
         ImageButton faq = (ImageButton) findViewById(R.id.faq_button);
+        faq.setVisibility(View.GONE);
 
         writeButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -118,7 +118,7 @@ public class SettingsActivity extends BRActivity {
     private void populateItems() {
 
         items.add(new BRSettingsItem(getString(R.string.Settings_wallet), "", null, true));
-
+/*
         items.add(new BRSettingsItem(getString(R.string.Settings_importTitle), "", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -128,7 +128,7 @@ public class SettingsActivity extends BRActivity {
 
             }
         }, false));
-
+*/
         items.add(new BRSettingsItem(getString(R.string.Settings_wipe), "", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -161,7 +161,7 @@ public class SettingsActivity extends BRActivity {
                 }
             }, false));
         }
-
+/*
         items.add(new BRSettingsItem(getString(R.string.Settings_currency), BRSharedPrefs.getIso(this), new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -170,7 +170,7 @@ public class SettingsActivity extends BRActivity {
                 overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
             }
         }, false));
-
+*/
         items.add(new BRSettingsItem(getString(R.string.Settings_sync), "", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -181,7 +181,7 @@ public class SettingsActivity extends BRActivity {
         }, false));
 
         items.add(new BRSettingsItem("", "", null, true));
-
+/*
         items.add(new BRSettingsItem(getString(R.string.Settings_shareData), "", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -203,6 +203,7 @@ public class SettingsActivity extends BRActivity {
                     app.overridePendingTransition(R.anim.enter_from_bottom, R.anim.empty_300);
                 }
             }, false));
+*/
         items.add(new BRSettingsItem(getString(R.string.Settings_about), "", new View.OnClickListener() {
             @Override
             public void onClick(View v) {

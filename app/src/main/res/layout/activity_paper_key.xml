@@ -31,7 +31,7 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/header"
-            app:customTFont="BarlowSemiCondensed-Bold.ttf"
+            android:fontFamily="@font/share_tech_mono"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -68,6 +68,7 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="@dimen/sub_header"
+            android:fontFamily="@font/share_tech_mono"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -110,6 +111,7 @@
             android:text="@string/WritePaperPhrase.previous"
             android:textColor="@color/extra_light_gray"
             android:textSize="18sp"
+            android:fontFamily="@font/share_tech_mono"
             app:isBreadButton="true"
             />
 
@@ -130,6 +132,7 @@
             android:text="@string/RecoverWallet.next"
             android:textColor="@color/button_secondary_text"
             android:textSize="18sp"
+            android:fontFamily="@font/share_tech_mono"
             app:isBreadButton="true"/>
 
     </LinearLayout>
@@ -143,7 +146,7 @@
         android:layout_marginTop="16dp"
         android:text="1 of 12"
         android:textColor="@color/light_gray"
-        app:customTFont="BarlowSemiCondensed-Medium.ttf"/>
+        android:fontFamily="@font/share_tech_mono"/>
 
 
 </RelativeLayout>

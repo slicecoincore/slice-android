@@ -51,6 +51,7 @@ public class ReEnterPinActivity extends BRActivity {
         pinLayout = (LinearLayout) findViewById(R.id.pinLayout);
 
         ImageButton faq = (ImageButton) findViewById(R.id.faq_button);
+        faq.setVisibility(View.GONE);
         //TODO: all views are using the layout of this button. Views should be refactored without it
         // Hiding until layouts are built.
 

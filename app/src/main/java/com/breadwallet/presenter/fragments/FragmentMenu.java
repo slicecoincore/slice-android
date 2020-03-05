@@ -86,7 +86,7 @@ public class FragmentMenu extends Fragment {
         close = rootView.findViewById(R.id.close_button);
 
         itemList = new ArrayList<>();
-        boolean buyBitcoinEnabled = APIClient.getInstance(getActivity()).isFeatureEnabled(APIClient.FeatureFlags.BUY_BITCOIN.toString());
+        boolean buyBitcoinEnabled = false;
         if (buyBitcoinEnabled)
             itemList.add(new BRMenuItem(getString(R.string.MenuButton_buy), R.drawable.buy_bitcoin, new View.OnClickListener() {
                 @Override
@@ -108,9 +108,10 @@ public class FragmentMenu extends Fragment {
                 app.overridePendingTransition(R.anim.enter_from_bottom, R.anim.fade_down);
             }
         }));
-        //TODO: Refactor with new FAQ / Support design using on-board FAQ data
+/*
         itemList.add(new BRMenuItem(getString(R.string.MenuButton_support), R.drawable.faq_question_white, null) {
         });
+*/
         itemList.add(new BRMenuItem(getString(R.string.MenuButton_settings), R.drawable.ic_settings, new View.OnClickListener() {
             @Override
             public void onClick(View v) {

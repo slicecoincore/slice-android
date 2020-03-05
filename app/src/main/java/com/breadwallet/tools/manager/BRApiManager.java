@@ -85,27 +85,23 @@ public class BRApiManager {
     private Set<CurrencyEntity> getCurrencies(Activity context) {
         Set<CurrencyEntity> set = new LinkedHashSet<>();
         try {
-            JSONArray arr = fetchRates(context);
+            JSONObject arr = fetchRates(context);
             updateFeePerKb(context);
             if (arr != null) {
-                int length = arr.length();
-                for (int i = 0; i < length; i++) {
-                    CurrencyEntity tmp = new CurrencyEntity();
-                    try {
-                        JSONObject tmpObj = (JSONObject) arr.get(i);
-                        tmp.name = tmpObj.getString("code");
-                        tmp.code = tmpObj.getString("code");
-                        tmp.rate = (float) tmpObj.getDouble("n");
-                        String selectedISO = BRSharedPrefs.getIso(context);
-                        if (tmp.code.equalsIgnoreCase(selectedISO)) {
-                            BRSharedPrefs.putIso(context, tmp.code);
-                            BRSharedPrefs.putCurrencyListPosition(context, i - 1);
-                        }
-                    } catch (JSONException e) {
-                        e.printStackTrace();
+                CurrencyEntity tmp = new CurrencyEntity();
+                try {
+                    tmp.name = "US Dollar";
+                    tmp.code = "USD";
+                    tmp.rate = (float) arr.getDouble("usd");
+                    String selectedISO = BRSharedPrefs.getIso(context);
+                    if (tmp.code.equalsIgnoreCase(selectedISO)) {
+                        BRSharedPrefs.putIso(context, tmp.code);
+                        BRSharedPrefs.putCurrencyListPosition(context, 0);
                     }
-                    set.add(tmp);
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
+                set.add(tmp);
             } else {
                 Log.e(TAG, "getCurrencies: failed to get currencies, response string: " + arr);
             }
@@ -162,61 +158,26 @@ public class BRApiManager {
     }
 
 
-    public static JSONArray fetchRates(Activity activity) {
-        String jsonString = urlGET(activity, "https://api.loshan.co.uk/api/v1/rates");
-        JSONArray jsonArray = null;
+    public static JSONObject fetchRates(Activity activity) {
+        String jsonString = urlGET(activity, "https://api.coingecko.com/api/v3/simple/price/?ids=slice&vs_currencies=usd");
+        JSONObject jsonObject = null;
         if (jsonString == null) return null;
         try {
-            jsonArray = new JSONArray(jsonString);
-
+            JSONObject obj = new JSONObject(jsonString);
+            jsonObject = obj.getJSONObject("slice");
         } catch (JSONException ignored) {
         }
-        return jsonArray == null ? backupFetchRates(activity) : jsonArray;
-    }
 
-    public static JSONArray backupFetchRates(Activity activity) {
-        String jsonString = urlGET(activity, "https://api.loafwallet.org/api/v1/rates");
-
-        JSONArray jsonArray = null;
-        if (jsonString == null) return null;
-        try {
-            jsonArray = new JSONArray(jsonString);
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        return jsonArray;
+        return jsonObject;
     }
 
     public static void updateFeePerKb(Context app) {
-        String jsonString = urlGET(app, "https://api.loafwallet.org/fee-per-kb");
-        if (jsonString == null || jsonString.isEmpty()) {
-            Log.e(TAG, "updateFeePerKb: failed to update fee, response string: " + jsonString);
-            return;
-        }
-        long fee;
-        long economyFee;
-        try {
-            JSONObject obj = new JSONObject(jsonString);
-            fee = obj.getLong("fee_per_kb");
-            economyFee = obj.getLong("fee_per_kb_economy");
-            if (fee != 0 && fee < BRWalletManager.getInstance().maxFee()) {
-                BRSharedPrefs.putFeePerKb(app, fee);
-                BRWalletManager.getInstance().setFeePerKb(fee, isEconomyFee); //todo improve that logic
-                BRSharedPrefs.putFeeTime(app, System.currentTimeMillis()); //store the time of the last successful fee fetch
-            } else {
-                FirebaseCrashlytics.getInstance().recordException(new NullPointerException("Fee is weird:" + fee));
-            }
-            if (economyFee != 0 && economyFee < BRWalletManager.getInstance().maxFee()) {
-                BRSharedPrefs.putEconomyFeePerKb(app, economyFee);
-            } else {
-                FirebaseCrashlytics.getInstance().recordException(new NullPointerException("Economy fee is weird:" + economyFee));
-            }
-        } catch (JSONException e) {
-            Log.e(TAG, "updateFeePerKb: FAILED: " + jsonString, e);
-            BRReportsManager.reportBug(e);
-            BRReportsManager.reportBug(new IllegalArgumentException("JSON ERR: " + jsonString));
-        }
+        long fee = 100000;
+        long economyFee = 1000;
+        BRSharedPrefs.putFeePerKb(app, fee);
+        BRWalletManager.getInstance().setFeePerKb(fee, isEconomyFee); //todo improve that logic
+        BRSharedPrefs.putFeeTime(app, System.currentTimeMillis()); //store the time of the last successful fee fetch
+        BRSharedPrefs.putEconomyFeePerKb(app, economyFee);
     }
 
     private static String urlGET(Context app, String myURL) {

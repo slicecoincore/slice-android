@@ -144,7 +144,7 @@ public class BRSharedPrefs {
 
     public static String getWalletName(Context context) {
         SharedPreferences prefs = context.getSharedPreferences(BRConstants.PREFS_NAME, Context.MODE_PRIVATE);
-        return prefs.getString(BRConstants.WALLET_NAME, "My Loaf");
+        return prefs.getString(BRConstants.WALLET_NAME, "Slice");
     }
 
     public static void putWalletName(Context ctx, String name) {
@@ -279,7 +279,7 @@ public class BRSharedPrefs {
     //if the user prefers all in litecoin units, not other currencies
     public static boolean getPreferredLTC(Context activity) {
         SharedPreferences prefs = activity.getSharedPreferences(BRConstants.PREFS_NAME, Context.MODE_PRIVATE);
-        return prefs.getBoolean("priceSetToLitecoin", true);
+        return prefs.getBoolean("priceSetToSlice", true);
     }
 
     //if the user prefers all in litecoin units, not other currencies
@@ -287,7 +287,7 @@ public class BRSharedPrefs {
         Log.e(TAG, "putPreferredLTC: " + b);
         SharedPreferences prefs = activity.getSharedPreferences(BRConstants.PREFS_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
-        editor.putBoolean("priceSetToLitecoin", b);
+        editor.putBoolean("priceSetToSlice", b);
         editor.apply();
     }
 

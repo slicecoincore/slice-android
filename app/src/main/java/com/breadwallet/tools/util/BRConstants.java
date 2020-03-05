@@ -72,7 +72,7 @@ public class BRConstants {
     public static final String FEE_KB_PREFS = "feeKb";
     public static final String ECONOMY_FEE_KB_PREFS = "EconomyFeeKb";
     public static final String LITTLE_CIRCLE = "\u2022";
-    public static String SUPPORT_EMAIL = "support@loafwallet.com";
+    public static String SUPPORT_EMAIL = "slicecoin@gmail.com";
 
     public static final int ONE_BITCOIN = 100000000;
     public static final int HUNDRED_BITS = 10000000;
@@ -110,8 +110,8 @@ public class BRConstants {
     public static final int CURRENT_UNIT_LITES = 1; // formerly CURRENT_UNIT_MBITS
     public static final int CURRENT_UNIT_LITECOINS = 2;
 
-    public static final String bitcoinLowercase = "\u0142";
-    public static final String bitcoinUppercase = "\u0141";
+    public static final String bitcoinLowercase = "";
+    public static final String bitcoinUppercase = "";
 
     public static final long PASS_CODE_TIME_LIMIT = TimeUnit.MILLISECONDS.convert(6, TimeUnit.DAYS);
 
@@ -122,9 +122,9 @@ public class BRConstants {
     /**
      * Donation
      */
-    public static final String DONATION_ADDRESS1 = "MDPqwDf9eUErGLcZNt1HN9HqnbFCSCSRme";
-    public static final String DONATION_AMOUNT_BASE = "0.009";
-    public static final String DONATION_MEMO = "Donation to the Litecoin Foundation.";
+    public static final String DONATION_ADDRESS1 = "sLoxAoGanAub77RFc8c2iBDeXVsab4aGmz";
+    public static final String DONATION_AMOUNT_BASE = "1";
+    public static final String DONATION_MEMO = "Donation to Slice.";
 
     /**
      * Support Center article ids.
@@ -138,9 +138,9 @@ public class BRConstants {
     public static final String fingerprintSpendingLimit = "fingerprint-spending-limit";
     public static final String transactionDetails = "transaction-details";
 //    public static final String manageWallet = "manage-wallet";
-    public static final String receive = "receive-litecoin";
+    public static final String receive = "receive-slice";
     public static final String requestAmount = "request-amount";
-    public static final String send = "send-litecoin";
+    public static final String send = "send-slice";
     public static final String walletDisabled = "wallet-disabled";
     public static final String resetPinWithPaperKey = "reset-pin-paper-key";
     public static final String setPin = "set-pin";
@@ -151,12 +151,12 @@ public class BRConstants {
     public static final String wipeWallet = "wipe-wallet";
     public static final String loopBug = "android-loop-bug";
 
-    public static final String TWITTER_LINK = "https://twitter.com/loafwallet";
-    public static final String REDDIT_LINK = "https://www.reddit.com/r/litecoin";
-    public static final String WEB_LINK = "https://loafwallet.org";
-    public static final String TOS_LINK = "https://loafwallet.org/tos";
+    public static final String TWITTER_LINK = "https://twitter.com/slicecoincore";
+    public static final String REDDIT_LINK = "https://t.me/slicecoincore";
+    public static final String WEB_LINK = "https://slicex.cc/";
+    public static final String TOS_LINK = "https://slicex.cc/";
 
-    public static final String BLOCK_EXPLORER_BASE_URL = BuildConfig.BITCOIN_TESTNET ? "https://testnet.litecore.io/tx/" :"https://insight.litecore.io/tx/";
+    public static final String BLOCK_EXPLORER_BASE_URL = BuildConfig.BITCOIN_TESTNET ? "https://explorer.slicex.cc/tx/" :"https://explorer.slicex.cc/tx/";
 
     private BRConstants() {
     }

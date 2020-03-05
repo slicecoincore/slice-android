@@ -26,11 +26,11 @@ android {
     compileSdkVersion = 29
     defaultConfig {
         testInstrumentationRunner = 'androidx.test.runner.AndroidJUnitRunner'
-        applicationId = 'com.loafwallet'
+        applicationId = 'com.slice'
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 605
-        versionName "v1.18.4"
+        versionName "v1.0.0"
         multiDexEnabled true
 
         // Similar to other properties in the defaultConfig block,
@@ -66,10 +66,10 @@ android {
     // Specifies two flavor dimensions.
     flavorDimensions "mode"
     productFlavors {
-        loaf {
-            applicationId "com.loafwallet"
+        slice {
+            applicationId "com.slice"
             dimension "mode"
-            resValue "string", "app_name", "Litewallet"
+            resValue "string", "app_name", "Slice"
             buildConfigField "boolean", "BITCOIN_TESTNET", "false"
 
             externalNativeBuild {
@@ -83,10 +83,10 @@ android {
             }
         }
 
-        loafTestnet {
-            applicationId "com.loafwallet.testnet"
+        sliceTestnet {
+            applicationId "com.slice.testnet"
             dimension "mode"
-            resValue "string", "app_name", "Litewallet-testnet"
+            resValue "string", "app_name", "Slice Testnet"
             buildConfigField "boolean", "BITCOIN_TESTNET", "true"
 
             externalNativeBuild {
@@ -200,7 +200,7 @@ dependencies {
     implementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     // add the Firebase SDK for Google Analytics
-    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.google.firebase:firebase-analytics:17.2.3'
 
     // Firebase Crashlytics.
     implementation 'com.google.firebase:firebase-crashlytics:17.0.0-beta01'

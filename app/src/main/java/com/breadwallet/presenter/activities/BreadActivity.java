@@ -148,7 +148,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
 
         BRAnimator.init(this);
         primaryPrice.setTextSize(primaryTextSize);
-        secondaryPrice.setTextSize(secondaryTextSize);
+        //secondaryPrice.setTextSize(secondaryTextSize);
 
         if (introSetPitActivity != null) introSetPitActivity.finish();
         if (introActivity != null) introActivity.finish();
@@ -180,7 +180,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
         Uri data = intent.getData();
         if (data == null) return;
         String scheme = data.getScheme();
-        if (scheme != null && (scheme.startsWith("litecoin") || scheme.startsWith("bitid"))) {
+        if (scheme != null && (scheme.startsWith("slice") || scheme.startsWith("bitid"))) {
             String str = intent.getDataString();
             BitcoinUrlHandler.processRequest(this, str);
         }
@@ -240,6 +240,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
                 transaction.commit();
             }
         });
+/*
         primaryPrice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -252,7 +253,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
                 swap();
             }
         });
-
+*/
         searchIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -263,7 +264,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
         });
 
     }
-
+/*
     private void swap() {
         if (!BRAnimator.isClickAllowed()) return;
         boolean b = !BRSharedPrefs.getPreferredLTC(this);
@@ -332,7 +333,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
             }
         }, toolBarConstraintLayout.getLayoutTransition().getDuration(LayoutTransition.CHANGING));
     }
-
+*/
     private void setUpBarFlipper() {
         barFlipper.setInAnimation(AnimationUtils.loadAnimation(this, R.anim.flipper_enter));
         barFlipper.setOutAnimation(AnimationUtils.loadAnimation(this, R.anim.flipper_exit));
@@ -431,8 +432,8 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
         menuButton = (LinearLayout) findViewById(R.id.menu_layout);
         manageText = (TextView) findViewById(R.id.manage_text);
         primaryPrice = (TextView) findViewById(R.id.primary_price);
-        secondaryPrice = (TextView) findViewById(R.id.secondary_price);
-        equals = (TextView) findViewById(R.id.equals);
+        //secondaryPrice = (TextView) findViewById(R.id.secondary_price);
+        //equals = (TextView) findViewById(R.id.equals);
        // TextView priceChange = (TextView) findViewById(R.id.price_change_text);
         TextView emptyTip = (TextView) findViewById(R.id.empty_tx_tip);
         toolBarConstraintLayout = (ConstraintLayout) findViewById(R.id.bread_toolbar);
@@ -452,7 +453,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
                     observer.removeOnGlobalLayoutListener(this);
                 if (uiIsDone) return;
                 uiIsDone = true;
-                setPriceTags(BRSharedPrefs.getPreferredLTC(BreadActivity.this), false);
+                //setPriceTags(BRSharedPrefs.getPreferredLTC(BreadActivity.this), false);
             }
         });
 
@@ -480,7 +481,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
         else
             return myView.getY() + getRelativeY((View) myView.getParent());
     }
-
+/*
     //0 crypto is left, 1 crypto is right
     private int getSwapPosition() {
         if (primaryPrice == null || secondaryPrice == null) {
@@ -488,7 +489,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
         }
         return getRelativeX(primaryPrice) < getRelativeX(secondaryPrice) ? 0 : 1;
     }
-
+*/
     @Override
     public void onBalanceChanged(final long balance) {
         updateUI();
@@ -513,7 +514,7 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
 
                 //amount in BTC units
                 BigDecimal btcAmount = BRExchange.getBitcoinForSatoshis(BreadActivity.this, amount);
-                final String formattedBTCAmount = BRCurrency.getFormattedCurrencyString(BreadActivity.this, "LTC", btcAmount);
+                final String formattedBTCAmount = BRCurrency.getFormattedCurrencyString(BreadActivity.this, "SLC", btcAmount);
 
                 //amount in currency units
                 BigDecimal curAmount = BRExchange.getAmountFromSatoshis(BreadActivity.this, iso, amount);
@@ -521,8 +522,8 @@ public class BreadActivity extends BRActivity implements BRWalletManager.OnBalan
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        primaryPrice.setText(formattedBTCAmount);
-                        secondaryPrice.setText(String.format("%s", formattedCurAmount));
+                        primaryPrice.setText(formattedBTCAmount + " SLC");
+                        //secondaryPrice.setText(String.format("%s", formattedCurAmount));
 
                     }
                 });

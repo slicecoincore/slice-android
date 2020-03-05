@@ -432,9 +432,9 @@ public class BRSender {
             feeForTx += (BRWalletManager.getInstance().getBalance(ctx) - request.amount) % 100;
         }
         final long total = request.amount + feeForTx;
-        String formattedAmountBTC = BRCurrency.getFormattedCurrencyString(ctx, "LTC", BRExchange.getBitcoinForSatoshis(ctx, new BigDecimal(request.amount)));
-        String formattedFeeBTC = BRCurrency.getFormattedCurrencyString(ctx, "LTC", BRExchange.getBitcoinForSatoshis(ctx, new BigDecimal(feeForTx)));
-        String formattedTotalBTC = BRCurrency.getFormattedCurrencyString(ctx, "LTC", BRExchange.getBitcoinForSatoshis(ctx, new BigDecimal(total)));
+        String formattedAmountBTC = BRCurrency.getFormattedCurrencyString(ctx, "SLC", BRExchange.getBitcoinForSatoshis(ctx, new BigDecimal(request.amount)));
+        String formattedFeeBTC = BRCurrency.getFormattedCurrencyString(ctx, "SLC", BRExchange.getBitcoinForSatoshis(ctx, new BigDecimal(feeForTx)));
+        String formattedTotalBTC = BRCurrency.getFormattedCurrencyString(ctx, "SLC", BRExchange.getBitcoinForSatoshis(ctx, new BigDecimal(total)));
 
         String formattedAmount = BRCurrency.getFormattedCurrencyString(ctx, iso, BRExchange.getAmountFromSatoshis(ctx, iso, new BigDecimal(request.amount)));
         String formattedFee = BRCurrency.getFormattedCurrencyString(ctx, iso, BRExchange.getAmountFromSatoshis(ctx, iso, new BigDecimal(feeForTx)));
@@ -442,9 +442,9 @@ public class BRSender {
 
         //formatted text
         return receiver + "\n\n"
-                + ctx.getString(R.string.Confirmation_amountLabel) + " " + formattedAmountBTC + " (" + formattedAmount + ")"
-                + "\n" + ctx.getString(R.string.Confirmation_feeLabel) + " " + formattedFeeBTC + " (" + formattedFee + ")"
-                + "\n" + ctx.getString(R.string.Confirmation_totalLabel) + " " + formattedTotalBTC + " (" + formattedTotal + ")"
+                + ctx.getString(R.string.Confirmation_amountLabel) + " " + formattedAmountBTC
+                + "\n" + ctx.getString(R.string.Confirmation_feeLabel) + " " + formattedFeeBTC
+                + "\n" + ctx.getString(R.string.Confirmation_totalLabel) + " " + formattedTotalBTC
                 + (request.comment == null ? "" : "\n\n" + request.comment);
     }
 

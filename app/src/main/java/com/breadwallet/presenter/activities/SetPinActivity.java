@@ -52,6 +52,7 @@ public class SetPinActivity extends BRActivity {
         //TODO: all views are using the layout of this button. Views should be refactored without it
         // Hiding until layouts are built.
         faq = (ImageButton) findViewById(R.id.faq_button);
+        faq.setVisibility(View.GONE);
 
         dot1 = findViewById(R.id.dot1);
         dot2 = findViewById(R.id.dot2);

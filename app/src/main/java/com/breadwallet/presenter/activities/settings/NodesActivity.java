@@ -71,6 +71,7 @@ public class NodesActivity extends BRActivity {
         //TODO: all views are using the layout of this button. Views should be refactored without it
         // Hiding until layouts are built.
         ImageButton faq = (ImageButton) findViewById(R.id.faq_button);
+        faq.setVisibility(View.GONE);
         nodeStatus = (TextView) findViewById(R.id.node_status);
         trustNode = (TextView) findViewById(R.id.node_text);
 

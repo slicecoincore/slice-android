@@ -27,7 +27,7 @@
             android:text="Manage Wallet"
             android:textColor="@color/almost_black"
             android:textSize="22sp"
-            app:customTFont="BarlowSemiCondensed-Bold.ttf"
+            android:fontFamily="@font/share_tech_mono"
             />
 
         <View
@@ -52,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="My Loaf"
+            android:text="Slice"
             android:textColor="@color/almost_black"
             android:textSize="18sp"/>
 

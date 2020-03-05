@@ -75,8 +75,8 @@ public class PaymentProtocolPostPaymentTask extends AsyncTask<String, String, St
             sent = false;
             URL url = new URL(paymentRequest.paymentURL);
             urlConnection = (HttpURLConnection) url.openConnection();
-            urlConnection.setRequestProperty("Content-Type", "application/litecoin-payment");
-            urlConnection.addRequestProperty("Accept", "application/litecoin-paymentack");
+            urlConnection.setRequestProperty("Content-Type", "application/slice-payment");
+            urlConnection.addRequestProperty("Accept", "application/slice-paymentack");
             urlConnection.setConnectTimeout(3000);
             urlConnection.setReadTimeout(3000);
             urlConnection.setRequestMethod("POST");

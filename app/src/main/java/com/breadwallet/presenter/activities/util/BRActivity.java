@@ -139,19 +139,7 @@ public class BRActivity extends Activity {
                             else if (BRBitId.isBitId(result))
                                 BRBitId.signBitID(BRActivity.this, result, null);
                             else
-                                Log.e(TAG, "onActivityResult: not litecoin address NOR bitID");
-                        }
-                    }, 500);
-
-                }
-                break;
-            case BRConstants.SCANNER_BCH_REQUEST:
-                if (resultCode == Activity.RESULT_OK) {
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            String result = data.getStringExtra("result");
-                            PostAuth.getInstance().onSendBch(BRActivity.this, true, result);
+                                Log.e(TAG, "onActivityResult: not slice address NOR bitID");
                         }
                     }, 500);
 

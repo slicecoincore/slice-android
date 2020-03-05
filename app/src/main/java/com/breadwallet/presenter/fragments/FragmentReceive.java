@@ -117,6 +117,7 @@ public class FragmentReceive extends Fragment {
         });
 
         ImageButton faq = (ImageButton) rootView.findViewById(R.id.faq_button);
+        faq.setVisibility(View.GONE);
         //TODO: all views are using the layout of this button. Views should be refactored without it
         // Hiding until layouts are built.
 
@@ -287,7 +288,7 @@ public class FragmentReceive extends Fragment {
                     public void run() {
                         receiveAddress = BRSharedPrefs.getReceiveAddress(ctx);
                         mAddress.setText(receiveAddress);
-                        boolean generated = QRUtils.generateQR(ctx, "litecoin:" + receiveAddress, mQrImage);
+                        boolean generated = QRUtils.generateQR(ctx, "slice:" + receiveAddress, mQrImage);
                         if (!generated)
                             throw new RuntimeException("failed to generate qr image for address");
                     }
