@@ -27,7 +27,7 @@
   <!-- Default wallet name -->
   <string name="AccountHeader.defaultWalletName">Slice</string>
   <!-- Third party keyboard warning -->
-  <string name="Alert.customKeyboard.android">It looks like you are using a third-party keyboard, which can record what you type and steal your Paper Key. Please switch to the default Android keyboard for extra protection.</string>
+  <string name="Alert.customKeyboard.android">It looks like you are using a third-party keyboard, which can record what you type and steal your Seed. Please switch to the default Android keyboard for extra protection.</string>
   <!-- Error alert title -->
   <string name="Alert.error">Error</string>
   <!-- Keystore error -->
@@ -45,11 +45,11 @@
   <!-- Addresses Copied Alert sub header -->
   <string name="Alerts.copiedAddressesSubheader">All wallet addresses successfully copied.</string>
   <!-- Alert Header Label (the paper key was set) -->
-  <string name="Alerts.paperKeySet">Paper Key Set</string>
+  <string name="Alerts.paperKeySet">Seed set</string>
   <!-- Alert Subheader label (playfully positive) -->
   <string name="Alerts.paperKeySetSubheader">Awesome!</string>
   <!-- Alert Header label (the PIN was set) -->
-  <string name="Alerts.pinSet">PIN Set</string>
+  <string name="Alerts.pinSet">PIN set</string>
   <!-- Send failure alert header label (the send failed to happen) -->
   <string name="Alerts.sendFailure">Send failed</string>
   <!-- Send success alert header label (confirmation that the send happened) -->
@@ -135,7 +135,7 @@
   <!-- Total Cost: ($5.00) -->
   <string name="Confirmation.totalLabel">Total Cost:</string>
   <!-- Confirm paper phrase view label. -->
-  <string name="ConfirmPaperPhrase.label">To make sure everything was written down correctly, please enter the following words from your paper key.</string>
+  <string name="ConfirmPaperPhrase.label">To make sure everything was written down correctly, please enter the following words from your Seed.</string>
   <!-- Word label eg. Word #1, Word #2 -->
   <string name="ConfirmPaperPhrase.word">Word #%1$s</string>
   <!-- Slice denomination picker label -->
@@ -293,7 +293,7 @@
   <!-- Device encryption prompt title -->
   <string name="Prompts.NoScreenLock.title.android">Screen lock disabled</string>
   <!-- Warning about paper key. -->
-  <string name="Prompts.PaperKey.body">Your Paper Key must be saved in case you ever lose or change your phone. Tap here to continue.</string>
+  <string name="Prompts.PaperKey.body">Your Seed must be saved in case you ever lose or change your phone. Tap here to continue.</string>
   <!-- An action is required (You must do this action). -->
   <string name="Prompts.PaperKey.title">Action Required</string>
   <!-- Transaction rejected prompt body -->
@@ -347,11 +347,11 @@
   <!-- Reset PIN with paper key: header -->
   <string name="RecoverWallet.header_reset_pin">Reset PIN</string>
   <!-- Enter paper key instruction -->
-  <string name="RecoverWallet.instruction">Enter Paper Key</string>
+  <string name="RecoverWallet.instruction">Enter Seed</string>
   <!-- Recover wallet intro -->
-  <string name="RecoverWallet.intro">Recover your Slice with your paper key.</string>
+  <string name="RecoverWallet.intro">Recover your Slice with your Seed.</string>
   <!-- Invalid paper key message -->
-  <string name="RecoverWallet.invalid">The paper key you entered is invalid. Please double-check each word and try again.</string>
+  <string name="RecoverWallet.invalid">The Seed you entered is invalid. Please double-check each word and try again.</string>
   <!-- Previous button accessibility label -->
   <string name="RecoverWallet.leftArrow">Left Arrow</string>
   <!-- Next button label -->
@@ -361,9 +361,9 @@
   <!-- Next button accessibility label -->
   <string name="RecoverWallet.rightArrow">Right Arrow</string>
   <!-- Recover wallet sub-header -->
-  <string name="RecoverWallet.subheader">Enter the paper key for the wallet you want to recover.</string>
+  <string name="RecoverWallet.subheader">Enter the Seed for the wallet you want to recover.</string>
   <!-- Reset PIN with paper key: sub-header -->
-  <string name="RecoverWallet.subheader_reset_pin">To reset your PIN, enter the words from your paper key into the boxes below.</string>
+  <string name="RecoverWallet.subheader_reset_pin">To reset your PIN, enter the words from your Seed into the boxes below.</string>
   <!-- No amount entered error message. -->
   <string name="RequestAnAmount.noAmount">Please enter an amount first.</string>
   <!-- Request a specific amount of litecoin -->
@@ -405,7 +405,7 @@
   <!-- Paper Key button description -->
   <string name="SecurityCenter.paperKeyDescription">The only way to access your Slice if you lose or upgrade your phone.</string>
   <!-- Paper Key button title -->
-  <string name="SecurityCenter.paperKeyTitle">Paper Key</string>
+  <string name="SecurityCenter.paperKeyTitle">Seed</string>
   <!-- PIN button description -->
   <string name="SecurityCenter.pinDescription">Protects your Slice from unauthorized users.</string>
   <!-- PIN button title -->
@@ -515,13 +515,13 @@
   <!-- Share data switch label. -->
   <string name="ShareData.toggleLabel">Share Anonymous Data?</string>
   <!-- button label -->
-  <string name="StartPaperPhrase.againButtonTitle">Write Down Paper Key Again</string>
+  <string name="StartPaperPhrase.againButtonTitle">Write Down Seed Again</string>
   <!-- Paper key explanation text. -->
-  <string name="StartPaperPhrase.body">Your paper key is the only way to restore your Slice if your phone is lost, stolen, broken, or upgraded.\n\nWe will show you a list of words to write down on a piece of paper and keep safe.</string>
+  <string name="StartPaperPhrase.body">Your Seed is the only way to restore your Slice if your phone is lost, stolen, broken, or upgraded.\n\nWe will show you a list of words to write down on a piece of paper and keep safe.</string>
   <!-- button label -->
-  <string name="StartPaperPhrase.buttonTitle">Write Down Paper Key</string>
+  <string name="StartPaperPhrase.buttonTitle">Write Down Seed</string>
   <!-- Argument is date -->
-  <string name="StartPaperPhrase.date">You last wrote down your paper key on %1$s</string>
+  <string name="StartPaperPhrase.date">You last wrote down your Seed on %1$s</string>
   <!-- Start view message -->
   <string name="StartViewController.message">The easy and secure way to use Slice.</string>
   <!-- Syncing view connectiong state header text -->
@@ -723,7 +723,7 @@
   <!-- Start wipe wallet view message -->
   <string name="WipeWallet.startMessage">Starting or recovering another wallet allows you to access and manage a different Slice on this device.</string>
   <!-- Start wipe wallet view warning -->
-  <string name="WipeWallet.startWarning">Your current wallet will be removed from this device. If you wish to restore it in the future, you will need to enter your Paper Key.</string>
+  <string name="WipeWallet.startWarning">Your current wallet will be removed from this device. If you wish to restore it in the future, you will need to enter your Seed.</string>
   <!-- Wipe wallet navigation item title. -->
   <string name="WipeWallet.title">Start or Recover Another Wallet</string>
   <!-- Wipe wallet button title -->

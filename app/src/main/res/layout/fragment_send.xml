@@ -176,10 +176,10 @@
 
             <com.breadwallet.presenter.customviews.BREdit
                 android:id="@+id/amount_edit"
-                android:layout_width="0dp"
+                android:layout_width="256dp"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="100dp"
                 android:layout_marginEnd="8dp"
                 android:layout_toEndOf="@id/iso_text"
                 android:background="@android:color/transparent"
@@ -204,7 +204,7 @@
                 android:layout_below="@+id/iso_text"
                 android:layout_marginTop="8dp"
                 android:text="Current Balance"
-                android:textColor="@color/light_gray"
+                android:textColor="@color/black"
                 android:visibility="invisible"
                 app:layout_constraintLeft_toLeftOf="@+id/iso_text"
                 app:layout_constraintTop_toTopOf="parent" />
