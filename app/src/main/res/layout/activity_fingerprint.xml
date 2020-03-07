@@ -94,7 +94,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="32dp"
         android:background="@drawable/bread_toggle"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         />
 
     <View
@@ -105,7 +105,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:background="@color/extra_light_gray"/>
+        android:background="@color/green_text"/>
 
     <com.breadwallet.presenter.customviews.BRText
         android:id="@+id/limit_exchange"
