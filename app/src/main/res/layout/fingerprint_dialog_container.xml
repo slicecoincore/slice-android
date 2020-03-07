@@ -88,7 +88,7 @@
                 android:filterTouchesWhenObscured="true"
                 android:gravity="center_vertical"
                 android:text="@string/UnlockScreen.touchIdInstructions.android"
-                android:textColor="@color/hint_color"/>
+                android:textColor="@color/black"/>
         </RelativeLayout>
 
         <LinearLayout
@@ -117,14 +117,16 @@
                 style="?android:attr/buttonBarNegativeButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:filterTouchesWhenObscured="true"/>
+                android:filterTouchesWhenObscured="true"
+                android:textColor="#000000" />
 
             <com.breadwallet.presenter.customviews.BRButton
                 android:id="@+id/second_dialog_button"
                 style="?android:attr/buttonBarPositiveButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:filterTouchesWhenObscured="true"/>
+                android:filterTouchesWhenObscured="true"
+                android:textColor="#000000" />
         </LinearLayout>
 
     </LinearLayout>
