@@ -1,29 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_intro_set_pit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/extra_light_blue_background"
+    android:background="@color/black"
     tools:context="com.breadwallet.presenter.activities.SetPinActivity">
+
+    <com.breadwallet.presenter.customviews.BRText
+        android:id="@+id/info_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/share_tech_mono"
+        android:text="[SLC]"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <com.breadwallet.presenter.customviews.BRText
+        android:id="@+id/info_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/share_tech_mono"
+        android:textColor="@color/white"
+        android:text="Slicecoin"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
 
     <RelativeLayout
         android:id="@+id/view3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="20dp"
@@ -37,118 +69,119 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/bread_margin"
         android:layout_marginTop="32dp"
-        android:text="@string/About.title"
-        android:textColor="@color/almost_black"
-        android:textSize="@dimen/header"
         android:fontFamily="@font/share_tech_mono"
+        android:text="@string/About.title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/header"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/divider1"
         android:layout_width="0dp"
         android:layout_height="1dp"
+        android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
         android:background="@color/extra_light_gray"
+        app:layout_constraintBottom_toTopOf="@+id/policy_text"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/policy_text"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
     <View
         android:id="@+id/view4"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
         android:background="@color/extra_light_gray"
         app:layout_constraintBottom_toTopOf="@+id/textView21"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
+        app:layout_constraintRight_toRightOf="parent" />
 
     <View
         android:id="@+id/view5"
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
         android:background="@color/extra_light_gray"
         app:layout_constraintBottom_toTopOf="@+id/textView22"
-        android:layout_marginRight="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <com.breadwallet.presenter.customviews.BRText
-        android:fontFamily="@font/share_tech_mono"
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
+        android:fontFamily="@font/share_tech_mono"
+        android:textColor="@color/white"
         android:text="@string/About.twitter"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/view4"
-        app:layout_constraintLeft_toLeftOf="@+id/divider1"/>
+        app:layout_constraintLeft_toLeftOf="@+id/divider1" />
 
     <com.breadwallet.presenter.customviews.BRText
-        android:fontFamily="@font/share_tech_mono"
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
         android:layout_marginLeft="0dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/share_tech_mono"
+        android:textColor="@color/white"
         android:text="@string/About.blog"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/view5"
-        app:layout_constraintLeft_toLeftOf="@+id/divider1"/>
+        app:layout_constraintLeft_toLeftOf="@+id/divider1" />
 
     <ImageView
         android:id="@+id/twitter_share_button"
         android:layout_width="16dp"
         android:layout_height="16dp"
+        android:src="@drawable/ic_share"
         app:layout_constraintBottom_toBottomOf="@+id/textView22"
         app:layout_constraintRight_toRightOf="@+id/view4"
-        app:layout_constraintTop_toTopOf="@+id/textView22"
-        android:src="@drawable/ic_share"/>
+        app:layout_constraintTop_toTopOf="@+id/textView22" />
 
     <ImageView
         android:id="@+id/blog_share_button"
         android:layout_width="16dp"
         android:layout_height="16dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginEnd="0dp"
         android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/ic_share"
         app:layout_constraintBottom_toBottomOf="@+id/textView24"
         app:layout_constraintRight_toRightOf="@+id/view5"
-        app:layout_constraintTop_toTopOf="@+id/textView24"
-        android:src="@drawable/ic_share"/>
+        app:layout_constraintTop_toTopOf="@+id/textView24" />
 
     <com.breadwallet.presenter.customviews.BRText
-        android:fontFamily="@font/share_tech_mono"
         android:id="@+id/policy_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:alpha="0.8"
-        android:text="@string/About.privacy"
-        android:textColor="@color/dark_blue"
-        android:textSize="16sp"
-        android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/info_text"/>
+        android:alpha="0.8"
+        android:fontFamily="@font/share_tech_mono"
+        android:text="@string/About.privacy"
+        android:textColor="@color/wallet_orange"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/info_text"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <com.breadwallet.presenter.customviews.BRText
         android:id="@+id/info_text"
@@ -157,31 +190,33 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="40dp"
+        android:fontFamily="@font/share_tech_mono"
+        android:textColor="@color/white"
         android:text="@string/About.footer"
         android:textAlignment="center"
-        android:fontFamily="@font/share_tech_mono"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
     <com.breadwallet.presenter.customviews.BRText
-        android:fontFamily="@font/share_tech_mono"
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
+        android:fontFamily="@font/share_tech_mono"
+        android:textColor="@color/white"
         android:text="@string/About.reddit"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/divider1"
-        app:layout_constraintLeft_toLeftOf="@+id/divider1"/>
+        app:layout_constraintLeft_toLeftOf="@+id/divider1" />
 
     <ImageView
         android:id="@+id/reddit_share_button"
         android:layout_width="16dp"
         android:layout_height="16dp"
+        android:src="@drawable/ic_share"
         app:layout_constraintBottom_toBottomOf="@+id/textView21"
         app:layout_constraintRight_toRightOf="@+id/divider1"
-        app:layout_constraintTop_toTopOf="@+id/textView21"
-        android:src="@drawable/ic_share"/>
+        app:layout_constraintTop_toTopOf="@+id/textView21" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

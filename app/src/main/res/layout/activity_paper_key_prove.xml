@@ -6,7 +6,7 @@
     android:id="@+id/activity_write_down"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/extra_light_blue_background"
+    android:background="@color/black"
     tools:context="com.breadwallet.presenter.activities.intro.WriteDownActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -133,11 +133,10 @@
 
         <com.breadwallet.presenter.customviews.BREdit
             android:id="@+id/word_edittext_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/bread_margin"
-            android:layout_marginStart="@dimen/bread_margin"
-            android:layout_marginTop="0dp"
+            android:layout_width="333dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
             android:background="@android:color/transparent"
             android:ems="10"
             android:inputType="textPersonName"
@@ -168,9 +167,10 @@
 
         <com.breadwallet.presenter.customviews.BREdit
             android:id="@+id/word_edittext_second"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="333dp"
+            android:layout_height="26dp"
             android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
             android:background="@android:color/transparent"
             android:ems="10"
             android:imeActionId="200"

@@ -6,8 +6,20 @@
     android:id="@+id/activity_write_down"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/extra_light_blue_background"
+    android:background="@color/black"
     tools:context="com.breadwallet.presenter.activities.intro.WriteDownActivity">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+
+        android:layout_alignBottom="@+id/button_write_down"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/restore_image2"
+        android:elevation="8dp"
+        tools:layout_marginStart="8dp" />
 
     <FrameLayout
         android:id="@+id/gradient_layout"
@@ -73,7 +85,7 @@
         android:layout_marginTop="51dp"
         android:lineSpacingMultiplier="1.3"
         android:text="@string/StartPaperPhrase.body"
-        android:textColor="@color/almost_black"
+        android:textColor="@color/white"
         android:textSize="18sp"/>
 
     <com.breadwallet.presenter.customviews.BRButton
@@ -85,7 +97,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="@dimen/bread_margin"
         android:layout_marginStart="@dimen/bread_margin"
-        app:buttonType="1"
+        app:buttonType="2"
         android:padding="10dp"
         android:text="@string/StartPaperPhrase.buttonTitle"
         android:textColor="@color/white"

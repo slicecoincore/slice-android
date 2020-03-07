@@ -6,7 +6,7 @@
     android:id="@+id/activity_intro_set_pit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/extra_light_blue_background"
+    android:background="@color/black"
     tools:context="com.breadwallet.presenter.activities.SetPinActivity">
 
 
@@ -18,7 +18,7 @@
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/share_tech_mono"
         android:text="@string/TouchIdSpendingLimit.title.android"
-        android:textColor="@color/almost_black"
+        android:textColor="@color/white"
         android:textSize="@dimen/header"
         app:layout_constraintEnd_toStartOf="@+id/faq_button"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -31,6 +31,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/white"
         android:text="@string/TouchIdSpendingLimit.body"
         android:textSize="@dimen/sub_header"
         app:layout_constraintRight_toRightOf="parent"

@@ -3,7 +3,7 @@
                                                         android:id="@+id/layout"
                                                         android:layout_width="match_parent"
                                                         android:layout_height="match_parent"
-                                                        android:background="@color/white"
+                                                        android:background="@color/black"
                                                         android:filterTouchesWhenObscured="true"
                                                         android:orientation="vertical">
 
@@ -69,7 +69,7 @@
         android:layout_margin="@dimen/bread_margin"
         android:lineSpacingMultiplier="1.2"
         android:text="@string/TouchIdSettings.label"
-        android:textColor="@color/almost_black"
+        android:textColor="@color/white"
         android:textSize="@dimen/sub_header"/>
 
     <com.breadwallet.presenter.customviews.BRText
@@ -82,14 +82,14 @@
         android:paddingEnd="8dp"
         android:paddingStart="16dp"
         android:text="@string/TouchIdSettings.switchLabel.android"
-        android:textColor="@color/almost_black"
+        android:textColor="@color/white"
         android:textSize="@dimen/paragraph"
         android:fontFamily="@font/share_tech_mono"/>
 
     <ToggleButton
         android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
+        android:layout_height="36dp"
         android:layout_alignBottom="@+id/enable_label"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="32dp"
@@ -113,7 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/divider1"
         android:layout_margin="@dimen/bread_margin"
-        android:textColor="@color/almost_black"
+        android:textColor="@color/wallet_orange"
         android:textSize="18sp"
         />
 
@@ -126,7 +126,7 @@
         android:layout_marginTop="14dp"
         android:lineSpacingMultiplier="1.2"
         android:text="@string/TouchIdSettings.customizeText.android"
-        android:textColor="@color/almost_black"
+        android:textColor="@color/white"
         android:textSize="@dimen/sub_header"/>
 
 </com.breadwallet.presenter.customviews.BRRelativeLayout>
