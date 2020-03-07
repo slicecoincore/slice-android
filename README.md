@@ -1,7 +1,7 @@
 Slice-Wallet for Android
 ----------------------------------
 
-![download](/images/icon-google-play.png)(#)
+<img src="/images/01.jpg" alt="drawing" width="200"/> <img src="/images/02.jpg" alt="drawing" width="200"/> <img src="/images/03.jpg" alt="drawing" width="200"/>
 
 ### Non-custodial, secure Slicecoin wallet
 
