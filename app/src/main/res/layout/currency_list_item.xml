@@ -14,7 +14,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:filterTouchesWhenObscured="true"
-        android:fontFamily="@font/share_tech_mono"
+        app:customTFont="BarlowSemiCondensed-Bold.ttf"
         android:gravity="center_vertical"
         android:minHeight="?android:attr/listPreferredItemHeightSmall"
         android:paddingStart="16dp"

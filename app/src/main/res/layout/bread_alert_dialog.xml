@@ -21,7 +21,7 @@
         android:textAlignment="center"
         android:textSize="22sp"
         android:textColor="@color/white"
-        android:fontFamily="@font/share_tech_mono"
+        app:customTFont="BarlowSemiCondensed-Bold.ttf"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>

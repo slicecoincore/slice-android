@@ -16,7 +16,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="@dimen/bread_margin"
         android:layout_marginRight="16dp"
-        android:fontFamily="@font/share_tech_mono"
+        app:customTFont="BarlowSemiCondensed-Bold.ttf"
         android:text="@string/UpdatePin.createTitle"
         android:textColor="@color/white"
         android:textSize="@dimen/header"

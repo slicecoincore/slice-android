@@ -21,7 +21,7 @@
         />
 
     <com.breadwallet.presenter.customviews.BRText
-        android:fontFamily="@font/share_tech_mono"
+        app:customTFont="BarlowSemiCondensed-Bold.ttf"
         android:id="@+id/item_addon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
