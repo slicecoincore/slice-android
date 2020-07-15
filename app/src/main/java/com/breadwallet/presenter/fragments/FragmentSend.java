@@ -160,7 +160,7 @@ public class FragmentSend extends Fragment {
         amountBuilder = new StringBuilder(0);
         setListeners();
         isoText.setText(getString(R.string.Send_amountLabel));
-        isoText.setTextSize(18);
+        isoText.setTextSize(12);
         isoText.setTextColor(getContext().getColor(R.color.light_gray));
         isoText.requestLayout();
 
@@ -202,13 +202,13 @@ public class FragmentSend extends Fragment {
                 if (amountLabelOn) { //only first time
                     amountLabelOn = false;
                     amountEdit.setHint("0");
-                    amountEdit.setTextSize(24);
+                    amountEdit.setTextSize(38);
                     balanceText.setVisibility(View.VISIBLE);
                     //feeText.setVisibility(View.VISIBLE);
                     edit.setVisibility(View.VISIBLE);
-                    isoText.setTextColor(getContext().getColor(R.color.almost_black));
+                    isoText.setTextColor(getContext().getColor(R.color.black));
                     isoText.setText(BRCurrency.getSymbolByIso(getActivity(), selectedIso));
-                    isoText.setTextSize(28);
+                    isoText.setTextSize(20);
                     final float scaleX = amountEdit.getScaleX();
                     amountEdit.setScaleX(0);
 

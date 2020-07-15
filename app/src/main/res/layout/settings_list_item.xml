@@ -16,7 +16,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:textSize="@dimen/sub_header"
+        android:textSize="@dimen/text_size"
         android:textColor="@color/wallet_orange"
         />
 

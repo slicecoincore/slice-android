@@ -62,7 +62,7 @@
                         android:layout_marginBottom="32dp"
                         app:customTFont="BarlowSemiCondensed-Medium.ttf"
                         android:textColor="@color/white"
-                        android:textSize="36sp"
+                        android:textSize="40sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -260,7 +260,7 @@
                 android:layout_weight="1"
                 android:text="@string/Send.sendLabel"
                 android:textAllCaps="true"
-                android:textColor="@color/pin_pad_text"
+                android:textColor="@color/almost_black"
                 app:customTFont="BarlowSemiCondensed-Medium.ttf" />
         </LinearLayout>
 
@@ -287,7 +287,7 @@
                 android:layout_weight="1"
                 android:text="@string/Button.receive"
                 android:textAllCaps="true"
-                android:textColor="@color/pin_pad_text"
+                android:textColor="@color/almost_black"
                 app:customTFont="BarlowSemiCondensed-Medium.ttf" />
         </LinearLayout>
 
@@ -314,7 +314,7 @@
                 android:layout_weight="1"
                 android:text="@string/Button.menu"
                 android:textAllCaps="true"
-                android:textColor="@color/pin_pad_text"
+                android:textColor="@color/almost_black"
                 app:customTFont="BarlowSemiCondensed-Medium.ttf" />
         </LinearLayout>
 

@@ -66,7 +66,7 @@ public class BRButton extends Button {
     private static final float SHADOW_PRESSED = 0.88f;
     private static final float SHADOW_UNPRESSED = 0.95f;
     private float shadowOffSet = SHADOW_UNPRESSED;
-    private static final int ROUND_PIXELS = 16;
+    private static final int ROUND_PIXELS = 0;
     private boolean isBreadButton; //meaning is has the special animation and shadow
 
     public BRButton(Context context) {
@@ -232,7 +232,7 @@ public class BRButton extends Button {
             bPaintStroke.setColor(getContext().getColor(R.color.button_primary_normal));
             bPaintStroke.setStyle(Paint.Style.STROKE);
             bPaintStroke.setStrokeWidth(Utils.getPixelsFromDps(getContext(), 1));
-            setTextColor(getContext().getColor(R.color.button_primary_normal));
+            setTextColor(getContext().getColor(R.color.black));
             bPaint.setColor(getContext().getColor(R.color.button_secondary));
             bPaint.setStyle(Paint.Style.FILL);
         }

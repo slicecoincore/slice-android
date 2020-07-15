@@ -66,11 +66,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
         android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/bread_margin"
+        android:layout_margin="@dimen/header"
         android:lineSpacingMultiplier="1.2"
         android:text="@string/TouchIdSettings.label"
         android:textColor="@color/white"
-        android:textSize="@dimen/sub_header"/>
+        android:textSize="@dimen/header"/>
 
     <com.breadwallet.presenter.customviews.BRText
         android:id="@+id/enable_label"
@@ -83,7 +83,7 @@
         android:paddingStart="16dp"
         android:text="@string/TouchIdSettings.switchLabel.android"
         android:textColor="@color/white"
-        android:textSize="@dimen/paragraph"
+        android:textSize="@dimen/header"
         app:customTFont="BarlowSemiCondensed-Bold.ttf"/>
 
     <ToggleButton
@@ -127,6 +127,6 @@
         android:lineSpacingMultiplier="1.2"
         android:text="@string/TouchIdSettings.customizeText.android"
         android:textColor="@color/white"
-        android:textSize="@dimen/sub_header"/>
+        android:textSize="@dimen/header"/>
 
 </com.breadwallet.presenter.customviews.BRRelativeLayout>

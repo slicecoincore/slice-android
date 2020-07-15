@@ -24,6 +24,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
+                android:background="@color/button_primary_normal"
                 android:layout_height="wrap_content">
 
                 <com.breadwallet.presenter.customviews.BRText
@@ -36,7 +37,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginStart="8dp"
                     android:text="@string/Receive.title"
-                    android:textColor="@color/almost_black"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/header"
                     app:customTFont="BarlowSemiCondensed-Bold.ttf"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -259,7 +260,7 @@
                     android:paddingBottom="12dp"
                     android:paddingTop="12dp"
                     android:text="@string/Receive.emailButton"
-                    android:textColor="@color/light_gray"
+                    android:textColor="@color/black"
                     android:textSize="14sp"
                     app:buttonType="2"
                     app:isBreadButton="true"
@@ -285,9 +286,8 @@
                 android:layout_marginTop="16dp"
                 android:padding="10dp"
                 android:text="@string/Receive.request"
-                android:textColor="@color/wallet_orange"
                 android:textSize="18sp"
-                app:buttonType="4"
+                app:buttonType="3"
                 app:isBreadButton="true"/>
 
         </LinearLayout>

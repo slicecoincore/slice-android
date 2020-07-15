@@ -67,7 +67,7 @@
             android:text="@string/WritePaperPhrase.instruction"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="@dimen/sub_header"
+            android:textSize="@dimen/header"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -101,7 +101,7 @@
             android:layout_marginStart="@dimen/bread_margin"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
-            app:buttonType="2"
+            app:buttonType="3"
             android:background="@android:color/transparent"
             android:elevation="0dp"
             android:enabled="false"
@@ -123,12 +123,12 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
-            app:buttonType="2"
+            app:buttonType="3"
             android:elevation="8dp"
             android:paddingBottom="8dp"
             android:paddingTop="8dp"
             android:text="@string/RecoverWallet.next"
-            android:textColor="@color/button_secondary_text"
+            android:textColor="@color/extra_light_gray"
             android:textSize="18sp"
             app:isBreadButton="true"/>
 
@@ -143,6 +143,7 @@
         android:layout_marginTop="16dp"
         android:text="1 of 12"
         android:textColor="@color/light_gray"
+        android:textSize="22sp"
         app:customTFont="BarlowSemiCondensed-Medium.ttf"/>
 
 

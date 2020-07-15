@@ -97,7 +97,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="@dimen/bread_margin"
         android:layout_marginStart="@dimen/bread_margin"
-        app:buttonType="2"
+        app:buttonType="3"
         android:padding="10dp"
         android:text="@string/StartPaperPhrase.buttonTitle"
         android:textColor="@color/white"

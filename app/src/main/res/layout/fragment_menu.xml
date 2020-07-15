@@ -22,6 +22,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/title_layout"
+            android:background="@color/button_primary_normal"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
