@@ -9,15 +9,15 @@
     >
 
     <com.breadwallet.presenter.customviews.BRText
-        app:customTFont="BarlowSemiCondensed-Bold.ttf"
+        app:customTFont="BarlowSemiCondensed-Light.ttf"
         android:id="@+id/item_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:textSize="@dimen/sub_header"
+        android:textSize="@dimen/header"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="8dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         />
 
 </RelativeLayout>
