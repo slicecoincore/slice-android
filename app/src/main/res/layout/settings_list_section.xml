@@ -17,7 +17,7 @@
         android:textSize="@dimen/header"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="8dp"
-        android:textColor="@color/white"
+        android:textColor="@color/button_primary_normal"
         />
 
 </RelativeLayout>
